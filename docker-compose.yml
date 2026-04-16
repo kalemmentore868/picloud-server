@@ -1,0 +1,12 @@
+services:
+  media-server:
+    build: .
+    container_name: picloud-server
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "${APP_PORT:-8080}:8080"
+    volumes:
+      - ./data:/app/data
+      - ./media:/app/media

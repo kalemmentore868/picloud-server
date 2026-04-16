@@ -1,0 +1,10 @@
+.DS_Store
+.env
+data/
+media/
+*.db
+*.db-shm
+*.db-wal
+personal-media-server
+picloud-server
+/server
